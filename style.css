@@ -23,7 +23,10 @@ main {
 }
 
 #outcome {
-  margin:2em 0;
+  display: inline-block;
+  width: 45%;
+  margin: calc(245px/2) auto;
+  vertical-align: top;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -47,6 +50,28 @@ main {
   color: red;
 }
 
-/*canvas {
-  display: block;
-}*/
+canvas {
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 2em;
+}
+
+@media only screen and (max-width: 765px) {
+  .letter {
+    font-size: 1.2em;
+  }
+
+  body, input, button {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .letter {
+    font-size: 1em;
+  }
+
+  body, input, button {
+    font-size: 12px;
+  }
+}

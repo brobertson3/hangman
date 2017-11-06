@@ -27,6 +27,11 @@ init();
  *      3. 
  */
 
+window.addEventListener("resize", function () {
+	// var height = document.querySelector("canvas").clientHeight;
+ 	document.getElementById('outcome').style.margin = canvas.height / 2 + " auto";
+});
+
 function init() {
 	document.getElementById("player1").style.display = "block";
 	document.getElementById("player2").style.display = "none";
